@@ -26,6 +26,5 @@ else if(randomNumber >= 20 && randomNumber<50){
     else{
             System.out.println("Large");
         }
-        System.out.println("Leon");
     }
 }
