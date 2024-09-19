@@ -40,7 +40,7 @@ else if (randomNumber1<50 && randomNumber2 != 50){}
         System.out.println("Erste Zahl klein, zweite kein 50iger");
 
 
-        System.out.println("hello world");
+        System.out.println("hello world waff");
 
     }
 }
