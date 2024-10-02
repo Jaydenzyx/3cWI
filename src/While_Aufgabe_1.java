@@ -17,15 +17,10 @@ public class While_Aufgabe_1 {
             sum+=randomNumber;
 
                 if (randomNumber == 15 || randomNumber == 25){
+                    System.out.println(sum);
                     isfinished = true ;
                 }
-
-            if (randomNumber == 15 || randomNumber == 25){
-                System.out.println(sum);
-            }
-
         }
-
     }
 
 }
