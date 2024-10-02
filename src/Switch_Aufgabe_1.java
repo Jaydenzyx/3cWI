@@ -23,7 +23,7 @@ public class Switch_Aufgabe_1 {
                 break;
 
             case 7:
-                System.out.printf("7");
+                System.out.println("7");
                 break;
 
             case 8:
