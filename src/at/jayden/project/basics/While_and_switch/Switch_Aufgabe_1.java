@@ -1,4 +1,4 @@
-package at.jayden.project.basics.While_and_Switch;
+package at.jayden.project.basics.While_and_switch;
 
 import java.util.Random;
 

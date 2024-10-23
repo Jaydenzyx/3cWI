@@ -1,4 +1,4 @@
-package at.jayden.project.basics.small_projects;
+package at.jayden.project.basics.Small_Projects;
 
 import java.util.Scanner;
 

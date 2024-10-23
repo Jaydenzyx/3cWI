@@ -1,4 +1,4 @@
-package at.jayden.project.basics.If_bedingungen;
+package at.jayden.project.basics.If_Bedingungen;
 
 import java.util.Random;
 

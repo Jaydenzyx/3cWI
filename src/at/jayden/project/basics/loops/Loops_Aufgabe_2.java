@@ -1,4 +1,4 @@
-package at.jayden.project.basics.Loops;
+package at.jayden.project.basics.loops;
 
 public class Loops_Aufgabe_2 {
 
