@@ -1,3 +1,5 @@
+package at.jayden.project.basics.While_and_Switch;
+
 import java.util.Random;
 
 public class Switch_Aufgabe_1 {

@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+package at.jayden.project.basics.If_bedingungen;
 
 import java.util.Random;
 

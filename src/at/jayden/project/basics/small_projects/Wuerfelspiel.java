@@ -1,3 +1,5 @@
+package at.jayden.project.basics.small_projects;
+
 import java.util.Random;
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-import com.sun.source.tree.WhileLoopTree;
+package at.jayden.project.basics.While_and_Switch;
 
 import java.util.Random;
 

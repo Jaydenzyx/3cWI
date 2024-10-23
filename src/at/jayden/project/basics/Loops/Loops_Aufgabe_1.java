@@ -1,3 +1,5 @@
+package at.jayden.project.basics.Loops;
+
 public class Loops_Aufgabe_1 {
     public static void main(String[] args) {
 

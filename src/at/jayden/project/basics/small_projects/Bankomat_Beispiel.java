@@ -1,5 +1,6 @@
+package at.jayden.project.basics.small_projects;
+
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class Bankomat_Beispiel {
     public static void main(String[] args) {
