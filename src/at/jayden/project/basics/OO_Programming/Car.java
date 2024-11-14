@@ -36,9 +36,9 @@ public class Car {
 
     }
 
-    public void getRemainingRange(){
-        int RemainingRange = this.fuelAmount/this.fuelConsumption*100;
-        System.out.println(RemainingRange + "km ");
+    public void getRemainingRange() {
+        int RemainingRange = this.fuelAmount / this.fuelConsumption * 100;
+        System.out.println(RemainingRange + "km");
     }
 
 }

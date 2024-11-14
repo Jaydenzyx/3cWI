@@ -28,7 +28,7 @@ public class main {
         c1.turboBoost();
         c2.honk();
         c1.getRemainingRange();
-
+        c2.getRemainingRange();
     }
 
 
