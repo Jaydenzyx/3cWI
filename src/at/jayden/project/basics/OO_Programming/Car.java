@@ -45,7 +45,7 @@ public class Car {
     public void honk() {
 
         for (int i = 0; i < this.amountOfRepetitions; i++) {
-            System.out.println("Tuuutuuu");
+            System.out.println("Tuutuu");
         }
 
     }

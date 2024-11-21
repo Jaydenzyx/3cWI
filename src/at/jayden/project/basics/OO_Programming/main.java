@@ -10,6 +10,7 @@ public class main {
 
         Car c2 = new Car(5,95,"Audi","12345","blue",5);
 
+        Car c3 = new Car(4,1515,"BMW","123456","black",3);
 
     }
 
