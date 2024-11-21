@@ -2,14 +2,25 @@ package at.jayden.project.basics.OO_Programming;
 
 public class Car {
 
-    public int fuelConsumption;
-    public int fuelAmount;
-    public String brand;
-    public String serialNumber;
+    private int fuelConsumption;
+    private int fuelAmount;
+    private String brand;
+    private String serialNumber;
     private String color;
-    public int MaxFuel;
-    public int amountOfRepetitions;
+    private int MaxFuel;
+    private int amountOfRepetitions;
 
+
+
+
+    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int amountOfRepetitions) {
+        this.fuelConsumption = fuelConsumption;
+        this.fuelAmount = fuelAmount;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+        this.color = color;
+        this.amountOfRepetitions = amountOfRepetitions;
+    }
 
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
@@ -28,6 +39,9 @@ public class Car {
         }
     }
 
+
+
+
     public void honk() {
 
         for (int i = 0; i < this.amountOfRepetitions; i++) {
@@ -41,7 +55,63 @@ public class Car {
         System.out.println(RemainingRange + "km");
     }
 
+    public void setFuelConsumption(int fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public void setFuelAmount(int fuelAmount) {
+
+
+            this.fuelAmount = fuelAmount;
+
+    }
+
+    public int getFuelAmount() {
+        if(this.fuelAmount>100){
+            this.fuelAmount = 100;
+        }
+
+            return fuelAmount;
+    }
+
+
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setAmountOfRepetitions(int amountOfRepetitions) {
+        this.amountOfRepetitions = amountOfRepetitions;
+    }
+
+
 }
+
+
 
 
 
