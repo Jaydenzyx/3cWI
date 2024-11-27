@@ -9,22 +9,39 @@ public class Car {
     private String color;
     private int MaxFuel;
     private int amountOfRepetitions;
+    private int enginespeed;
 
 
 
 
-    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int amountOfRepetitions) {
+    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int amountOfRepetitions, int enginespeed) {
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.color = color;
         this.amountOfRepetitions = amountOfRepetitions;
+        this.enginespeed = enginespeed;
     }
 
-    public void drive() {
-        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println("I am driving");
+    public void drive(int speed) {
+        if(speed < 1 || speed > 100){
+            System.out.println("Speed must be between 1 and 100");
+            return;
+        }
+    }
+
+    public void engine(){
+        if (this.fuelAmount <1 || this.fuelAmount<101){
+            System.out.println("Not enough fuel");
+        }
+
+        if(this.enginespeed >=1 && this.enginespeed <=50) {
+            System.out.println("slow modus");
+            this.fuelAmount = this.fuelAmount - this.fuelConsumption;
+        }else {
+            System.out.println("fast mode");
+        }
     }
 
     public void brake() {
