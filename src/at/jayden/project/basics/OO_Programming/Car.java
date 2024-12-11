@@ -13,7 +13,9 @@ public class Car {
 
     int honkcounter = 0;
 
-    public Car(Engine engine, int speed, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int amountOfRepetitions, int maxFuel) {
+
+
+    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int maxFuel) {
         this.engine = engine;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
@@ -25,9 +27,6 @@ public class Car {
 
 
 
-    public void drive(int speed) {
-
-    }
 
 
     public void brake() {
@@ -117,14 +116,15 @@ public class Car {
         return MaxFuel;
     }
 
-    public int getSpeed() {
-        return speed;
+
+    public Engine getEngine() {
+        return engine;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
+
+
 }
+
 
 
 

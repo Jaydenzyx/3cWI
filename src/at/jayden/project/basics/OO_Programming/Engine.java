@@ -11,17 +11,17 @@ public class Engine {
         this.type = type;
     }
 
-    public void motor(int speed){
-        if(speed <= 50){
+
+
+    public void drive(int amount){
+        System.out.println("Your driving with " + amount + "kmh");
+        if(amount <= 50){
             System.out.println("slow mode");
-        } else {
-            System.out.println("speed mode");
+        }else {
+            System.out.println("fast mode");
         }
     }
 
-    public void drive(int amount){
-        System.out.println("the motor is running with " + amount);
-    }
 
     public int getHorsepower() {
         return horsepower;
