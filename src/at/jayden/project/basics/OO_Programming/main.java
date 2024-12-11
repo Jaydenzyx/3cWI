@@ -39,7 +39,15 @@ public class main {
         System.out.println(c2.getEngine().getHorsepower());
 
 
-        //wagagw
+        c3.getEngine().drive(50);
+
+        RearMirror r1 = new RearMirror(100,0);
+        RearMirror r2 = new RearMirror(90,+40);
+
+        c1.addMirror(r1);
+        c2.addMirror(r2);
+
+        System.out.println(c2.getMirrors().get(0).getMirrorposition());
 
     }
 

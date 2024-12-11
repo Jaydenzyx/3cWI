@@ -1,5 +1,8 @@
 package at.jayden.project.basics.OO_Programming;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
 
     private Engine engine;
@@ -10,6 +13,7 @@ public class Car {
     private String color;
     private int MaxFuel;
     private int speed;
+    private List<RearMirror> mirrors;
 
     int honkcounter = 0;
 
@@ -23,10 +27,20 @@ public class Car {
         this.serialNumber = serialNumber;
         this.color = color;
         this.MaxFuel = maxFuel;
+        this.mirrors = new ArrayList<>();
     }
 
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
 
+    public void setMirrors(List<RearMirror> mirrors) {
+        this.mirrors = mirrors;
+    }
 
+    public void addMirror (RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+    }
 
 
     public void brake() {
@@ -121,7 +135,6 @@ public class Car {
         return engine;
     }
 
-    //eggw
 
 }
 
