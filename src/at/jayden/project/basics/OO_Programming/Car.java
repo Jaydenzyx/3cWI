@@ -14,9 +14,9 @@ public class Car {
     private int MaxFuel;
     private int speed;
     private List<RearMirror> mirrors;
+    private List<Tire> tires;
 
     int honkcounter = 0;
-
 
 
     public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int maxFuel) {
@@ -28,7 +28,22 @@ public class Car {
         this.color = color;
         this.MaxFuel = maxFuel;
         this.mirrors = new ArrayList<>();
+        this.tires = new ArrayList<>();
     }
+
+
+    public List<Tire> getTires() {
+        return tires;
+    }
+
+    public void setTires(List<Tire> tires) {
+        this.tires = tires;
+    }
+
+    public void addTire(Tire tiress) {
+        this.tires.add(tiress);
+    }
+
 
     public List<RearMirror> getMirrors() {
         return mirrors;
@@ -38,7 +53,7 @@ public class Car {
         this.mirrors = mirrors;
     }
 
-    public void addMirror (RearMirror rearMirror){
+    public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
 
@@ -54,8 +69,6 @@ public class Car {
             System.out.println("Not enough Fuel to go to Superboost");
         }
     }
-
-
 
 
     public void honk() {
@@ -83,9 +96,8 @@ public class Car {
 
     public int getFuelAmount() {
 
-            return fuelAmount;
+        return fuelAmount;
     }
-
 
 
     public void setBrand(String brand) {
@@ -113,12 +125,10 @@ public class Car {
     }
 
 
-
-
     public void setMaxFuel(int maxFuel) {
-        if (MaxFuel>100){
+        if (MaxFuel > 100) {
             this.MaxFuel = 100;
-            if (fuelAmount>100){
+            if (fuelAmount > 100) {
                 this.fuelAmount = 100;
             }
         }

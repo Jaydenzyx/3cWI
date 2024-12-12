@@ -1,7 +1,7 @@
 package at.jayden.project.basics.OO_Programming;
 
 public class RearMirror {
-    private  int Mirrorsize;
+    private int Mirrorsize;
     private int Mirrorposition; // 0 neutral, -10 nach links, +10 nach Rechts
 
     public RearMirror(int size, int position) {
@@ -21,7 +21,7 @@ public class RearMirror {
         return Mirrorposition;
     }
 
-    public void setPosition(int position) {
+    public void setMirrorposition(int position) {
         this.Mirrorposition = position;
     }
 }

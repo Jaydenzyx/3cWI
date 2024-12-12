@@ -2,6 +2,7 @@ package at.jayden.project.basics.OO_Programming;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS}
+
     private int horsepower;
     private TYPE type;
 
@@ -12,13 +13,14 @@ public class Engine {
     }
 
 
-
-    public void drive(int amount){
+    public void drive(int amount) {
         System.out.println("Your driving with " + amount + "kmh");
-        if(amount <= 50){
+        if (amount >=1 &&amount <= 50) {
             System.out.println("slow mode");
-        }else {
+        } else if (amount>50 && amount <= 100){
             System.out.println("fast mode");
+        } else {
+            System.out.println("geben sie bitte eine zahl zwischen 1 und 100 ein");
         }
     }
 
@@ -30,7 +32,6 @@ public class Engine {
     public TYPE getType() {
         return type;
     }
-
 
 
 }
