@@ -12,7 +12,10 @@ public class main {
         r1.addBattery(b1);
         r1.addBattery(b2);
 
-        r1.getStatus();
+
+       r1.turnon();
+       r1.turnon();
+
 
 
     }

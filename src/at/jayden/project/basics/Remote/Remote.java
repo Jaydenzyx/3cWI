@@ -43,6 +43,18 @@ public class Remote {
         sum = sum/ batteries.size();
         System.out.println(sum);
         }
+
+    public void turnon(){
+        for (Battery battery : batteries){
+            battery.setChargingstatus(battery.getChargingstatus() - 5);
+            System.out.println(battery.getChargingstatus());
+        }
+    }
+
+    public void turnoff(){
+        System.out.println("Kein Verbraucher angeschlossen ");
+    }
+
     }
 
 
