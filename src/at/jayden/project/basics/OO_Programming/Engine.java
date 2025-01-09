@@ -2,14 +2,15 @@ package at.jayden.project.basics.OO_Programming;
 
 public class Engine {
     public enum TYPE {DIESEL, GAS}
-
     private int horsepower;
     private TYPE type;
+    private int fuelConsumption;
 
 
-    public Engine(int horsepower, TYPE type) {
+    public Engine(int horsepower, TYPE type,int fuelConsumption) {
         this.horsepower = horsepower;
         this.type = type;
+        this.fuelConsumption = fuelConsumption;
     }
 
 
@@ -33,5 +34,8 @@ public class Engine {
         return type;
     }
 
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
 
 }

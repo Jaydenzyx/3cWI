@@ -5,20 +5,24 @@ public class main {
     public static void main(String[] args) {
 
 
-        Engine e1 = new Engine(120, Engine.TYPE.DIESEL);
+        Engine e1 = new Engine(120, Engine.TYPE.DIESEL,9);
 
-        Engine e2 = new Engine(210, Engine.TYPE.GAS);
+        Engine e2 = new Engine(210, Engine.TYPE.GAS,8);
 
-        Engine e3 = new Engine(180, Engine.TYPE.DIESEL);
+        Engine e3 = new Engine(180, Engine.TYPE.DIESEL,7);
 
-        Car c1 = new Car(e1, 7, 14, "Mercedes", "123", "red", 125);
+        Tank t1 = new Tank(80,100);
+        Tank t2 = new Tank(120,160);
+        Tank t3 = new Tank(95,115);
 
-        Car c2 = new Car(e2, 5, 95, "Audi", "1234", "blue", 140);
+        Car c1 = new Car(e1,"Audi","89148","blue",t1);
 
-        Car c3 = new Car(e3, 10, 90, "Opel", "12345", "orange", 110);
+        Car c2 = new Car(e2,"BMW","15815","red",t2);
 
-        System.out.println(c3.getMaxFuel());
-        System.out.println(c3.getFuelAmount());
+        Car c3 = new Car(e3,"Mercedes","9135","black",t3);
+
+
+
 
         c2.turboBoost();
 
@@ -47,15 +51,16 @@ public class main {
 
         System.out.println(c2.getMirrors().get(0).getMirrorposition());
 
-        Tire t1 = new Tire(15, "blue", Tire.TYPE.Winter);
-        Tire t2 = new Tire(20, "black", Tire.TYPE.Summer);
+        Tire ti1 = new Tire(15, "blue", Tire.TYPE.Winter);
+        Tire ti2 = new Tire(20, "black", Tire.TYPE.Summer);
 
 
-        System.out.println(t1.getTirecolor());
-        System.out.println(t1.getTiresize());
+        System.out.println(ti1.getTirecolor());
+        System.out.println(ti1.getTiresize());
 
-        c1.addTire(t1);
+        c1.addTire(ti1);
 
+        c1.turboBoost();
 
 
     }

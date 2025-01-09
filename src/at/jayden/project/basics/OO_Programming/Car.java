@@ -4,31 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
-
+    private Tank tank;
     private Engine engine;
-    private int fuelConsumption;
-    private int fuelAmount;
     private String brand;
     private String serialNumber;
     private String color;
-    private int MaxFuel;
     private int speed;
     private List<RearMirror> mirrors;
     private List<Tire> tires;
 
+
     int honkcounter = 0;
 
 
-    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int maxFuel) {
+    public Car(Engine engine,String brand, String serialNumber, String color,Tank tank) {
         this.engine = engine;
-        this.fuelConsumption = fuelConsumption;
-        this.fuelAmount = fuelAmount;
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.color = color;
-        this.MaxFuel = maxFuel;
         this.mirrors = new ArrayList<>();
         this.tires = new ArrayList<>();
+        this.tank = tank;
     }
 
 
@@ -63,7 +59,7 @@ public class Car {
     }
 
     public void turboBoost() {
-        if (this.fuelAmount > this.MaxFuel * 0.10) {
+        if (this.tank.getFuelamount() > this.tank.getMaxFuel() * 0.10) {
             System.out.println("SuperBoostMode");
         } else {
             System.out.println("Not enough Fuel to go to Superboost");
@@ -78,25 +74,8 @@ public class Car {
     }
 
     public void getRemainingRange() {
-        int RemainingRange = this.fuelAmount / this.fuelConsumption * 100;
+        int RemainingRange = this.tank.getFuelamount() / this.engine.getFuelConsumption() * 100;
         System.out.println(RemainingRange + "km");
-    }
-
-    public void setFuelConsumption(int fuelConsumption) {
-        this.fuelConsumption = fuelConsumption;
-    }
-
-    public int getFuelConsumption() {
-        return fuelConsumption;
-    }
-
-    public void setFuelAmount(int fuelAmount) {
-        this.fuelAmount = fuelAmount;
-    }
-
-    public int getFuelAmount() {
-
-        return fuelAmount;
     }
 
 
@@ -124,27 +103,13 @@ public class Car {
         return color;
     }
 
-
-    public void setMaxFuel(int maxFuel) {
-        if (MaxFuel > 100) {
-            this.MaxFuel = 100;
-            if (fuelAmount > 100) {
-                this.fuelAmount = 100;
-            }
-        }
-        MaxFuel = maxFuel;
-    }
-
-    public int getMaxFuel() {
-
-        return MaxFuel;
-    }
-
-
     public Engine getEngine() {
         return engine;
     }
 
+    public Tank getTank() {
+        return tank;
+    }
 
 }
 
