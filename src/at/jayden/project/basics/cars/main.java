@@ -11,7 +11,7 @@ public class main {
     engine e1 = new engine(200,"black",engine.TYPE.DIESEL);
     manufacturer m1 = new manufacturer("Leon","guam",5);
 
-    Car c1 = new Car(47000,"black",200,17000,9.0,m1,e1);
+    Car c1 = new Car(49000,"black",200,17000,9.0,m1,e1);
 
         System.out.println(c1.getBasicprice());
         System.out.println(m1.getRabatt() + "%");

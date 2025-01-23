@@ -18,6 +18,9 @@ public class Car {
         this.basicconsumption = basicconsumption;
         this.manufacturer = manufacturer;
         this.engine = engine;
+        if(distancedriven >= 50000){
+             this.basicconsumption = this.basicconsumption * 1.09;
+        }
     }
 
 
@@ -56,12 +59,8 @@ public class Car {
     }
 
     public double getBasicconsumption() {
-        if(distancedriven >= 50000){
-            return basicconsumption * 1.09;
-        }
-        else{
             return basicconsumption;
-        }
+
 
     }
 
