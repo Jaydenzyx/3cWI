@@ -27,4 +27,35 @@ public class Lamp {
         this.lightelements.add(lightelement);
     }
 
-}
+    public void turnallOn(){
+
+        for(Lightelement/*typ*/ lightelement /*name*/ : lightelements /*von welcher liste*/){
+            lightelement.isOn = true;
+            lightelement.setPowerconsumption(5);
+        }
+
+    }
+
+
+    public void getOverallPowerConsumption(){
+      int i = 0;
+      for (Lightelement/*typ*/ lightelement /*name*/ : lightelements /*von welcher liste*/){
+          i += lightelement.getPowerconsumption();
+            }
+        System.out.println(i);
+        }
+
+    public void printNamesOfLightElements(){
+
+        for (Lightelement/*typ*/ lightelement /*name*/ : lightelements /*von welcher liste*/){
+            System.out.println(lightelement.getName());
+        }
+
+    }
+
+
+    }
+
+
+
+

@@ -34,14 +34,15 @@ public Lightelement(String name, String color, int powerconsumption) {
 
     public void turnOn(){
     powerconsumption = powerconsumption + 5;
-
     if (isOn){
         System.out.println("Mein name ist " + this.name +"." + "Ich bin bereits eingeschaltet");
+        powerconsumption = powerconsumption - 5;
     }else{
         isOn = true;
         System.out.println("On");
     }
 
     }
+
 
 }
