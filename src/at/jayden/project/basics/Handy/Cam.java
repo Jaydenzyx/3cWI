@@ -4,12 +4,13 @@ public class Cam {
 
     private String brand;
     private String model;
-    private int resolution;
+    public enum TYPE {Good, mid,low};
+    private TYPE Qaulitytype;
 
-    public Cam(String brand, String model, int resolution) {
+    public Cam(String brand, String model, TYPE qaulitytype) {
         this.brand = brand;
         this.model = model;
-        this.resolution = resolution;
+        Qaulitytype = qaulitytype;
     }
 
     public String getBrand() {
@@ -28,12 +29,18 @@ public class Cam {
         this.model = model;
     }
 
-    public int getResolution() {
-        return resolution;
+    public TYPE getQaulitytype() {
+        return Qaulitytype;
     }
 
-    public void setResolution(int resolution) {
-        this.resolution = resolution;
+    public void setQaulitytype(TYPE qaulitytype) {
+        Qaulitytype = qaulitytype;
     }
+
+    public Photofile takePicture() {
+        System.out.println("Picture taken");
+        return new Photofile(32, "picture");
+    }
+
 
 }
